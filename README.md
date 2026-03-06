@@ -30,7 +30,8 @@
  ├── overlay_esp.py     # ESP 程式：獨立後台推論與 PyQt5 前台透明骨架渲染
  ├── yolo.py            # 核心引擎：TensorRT 封裝與 CUDA Graph 最佳化
  ├── config.py          # 參數配置：按鍵綁定、PID 參數、信心值、擷取範圍等
- ├── export_trt.py      # 模型轉換：將 PyTorch YOLO 模型轉為 TensorRT Engine
+ ├── models/            # 模型與轉換工具目錄
+ │   └── export_trt.py      # 模型轉換：將 PyTorch YOLO 模型轉為 TensorRT Engine
  └── IbInputSimulator.dll # 滑鼠硬體級模擬驅動 (需自備/配置)
 ```
 
