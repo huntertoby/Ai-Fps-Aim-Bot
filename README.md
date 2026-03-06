@@ -67,14 +67,14 @@ python overlay_esp.py
 ## 📁 檔案結構 (Directory Structure)
 
 ```text
-├── config.py           # 系統全域設定檔 (按鍵、PID、影像擷取參數)",
-├── main.py             # 實戰主程式 (畫面擷取、推論調度、目標邏輯判斷)",
-├── mouse_actor.py      # 滑鼠控制執行緒 (IbInputSimulator + PID 控制器)",
-├── overlay_esp.py      # PyQt5 ESP 透視視窗 (後台推論 + 前台渲染)",
-├── yolo.py             # 封裝 TensorRT Native 推論引擎 (CUDA Graph)",
-├── models/             # 模型與轉換工具目錄",
-│   └── export_trt.py   # YOLO .pt 轉 TensorRT .engine 工具",
-└── IbInputSimulator.dll # Ring-0 硬體輸入模擬動態連結庫",
+├── config.py           # 系統全域設定檔 (按鍵、PID、影像擷取參數)
+├── main.py             # 實戰主程式 (畫面擷取、推論調度、目標邏輯判斷)
+├── mouse_actor.py      # 滑鼠控制執行緒 (IbInputSimulator + PID 控制器)
+├── overlay_esp.py      # PyQt5 ESP 透視視窗 (後台推論 + 前台渲染)
+├── yolo.py             # 封裝 TensorRT Native 推論引擎 (CUDA Graph)
+├── models/             # 模型與轉換工具目錄"
+│   └── export_trt.py   # YOLO .pt 轉 TensorRT .engine 工具
+└── IbInputSimulator.dll # Ring-0 硬體輸入模擬動態連結庫"
 ```
 
 ---
