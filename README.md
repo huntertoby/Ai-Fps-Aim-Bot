@@ -54,12 +54,12 @@ pip install tensorrt ultralytics bettercam simple_pid PyQt5 pywin32 numpy
 
 ### 3. 準備模型
 本專案預設使用 YOLO-Pose 模型。你需要先準備 `.pt` 檔，並轉換為極致效能的 `.engine` 檔：
-1. 將你的 YOLO-Pose 模型命名為 `yolo26l-pose.pt` 並放在專案根目錄。*(註：如果直接執行下方轉換腳本，系統也會自動幫你下載。你也可以依照自己的硬體需求，替換使用 `m` 或 `s` 等不同級別的模型)
+1. 將你的 YOLO-Pose 模型命名為 `yolo26l-pose.pt` 並放在專案models資料夾。*(註：如果直接執行下方轉換腳本，系統也會自動幫你下載。你也可以依照自己的硬體需求，替換使用 `m` 或 `s` 等不同級別的模型)
 2. 執行轉換腳本（此過程需要幾分鐘，TensorRT 會尋找最佳 kernel）：
 ```bash
 python export_trt.py
 ```
-3. 將產生的 `.engine` 檔案移至 `models/` 資料夾下（或至 `config.py` 修改路徑）。
+3. 產生的 `.engine` 會生成在 `models/` 資料夾下。
 
 ### 4. 準備滑鼠驅動
 請確保 `IbInputSimulator.dll` 放置於 `mouse_actor.py` 同層目錄中，並具備執行權限。
